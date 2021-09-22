@@ -1,5 +1,5 @@
 # guess-the-flag_template
-==[Erläuterung der Aufgabe]==
+##Erläuterung der Aufgabe
 In diesem Projekt soll ein einfaches Flagen-Quiz erstellt werden. Hierbei soll eine Flagge angezeigt werden und der Spieler soll aus mehreren Optionen das richtige Land auswählen, zu dem die Flagge gehört. 
 
 Für jede „Frage“ wird jeweils eine Flagge angezeigt, und per Zufall fünf falsche Antworten und eine richtige Antwort eingefügt. 
@@ -12,7 +12,7 @@ Die richtig geantworteten Fragen können in einer Variablen gespeichert werden. 
 Dann kann am Ende noch eine Zusammenfassung eingeblendet werden.
 
 
-==[Befehle, um aus Javascript auf die HTML-Elemente zuzugreifen]==
+##Befehle, um aus Javascript auf die HTML-Elemente zuzugreifen
 document.querySelector
 Mit dem Query-Selector kann man mit CSS-Anfragen Elemente auswählen: 
 Der folgende Befehl liefert ein Element, das die CSS-Bedingung erfüllt.
@@ -36,7 +36,7 @@ const icon = document.createElement("img");
 Der Befehl appendChild ermöglicht es HTML-Objekte in einem HTML-Objekt einzufügen:
 questionSummary.appendChild(icon);
 
-==[Einbinden der Flaggen]==
+##Einbinden der Flaggen
 Für die Flaggen kein eine kostenlose API verwendet werden, um die Länderdaten als Array zu laden.
 //Datenrepresentation
 let countries = [];
