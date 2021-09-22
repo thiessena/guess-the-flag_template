@@ -37,6 +37,7 @@ Der Befehl appendChild ermöglicht es HTML-Objekte in einem HTML-Objekt einzufü
 questionSummary.appendChild(icon);
 
 ##Einbinden der Flaggen
+
 Für die Flaggen kein eine kostenlose API verwendet werden, um die Länderdaten als Array zu laden.
 //Datenrepresentation
 let countries = [];
