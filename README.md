@@ -12,7 +12,7 @@ Die richtig geantworteten Fragen können in einer Variablen gespeichert werden. 
 Dann kann am Ende noch eine Zusammenfassung eingeblendet werden.
 
 
-##Befehle, um aus Javascript auf die HTML-Elemente zuzugreifen
+## Befehle, um aus Javascript auf die HTML-Elemente zuzugreifen
 document.querySelector
 Mit dem Query-Selector kann man mit CSS-Anfragen Elemente auswählen: 
 Der folgende Befehl liefert ein Element, das die CSS-Bedingung erfüllt.
@@ -36,7 +36,7 @@ const icon = document.createElement("img");
 Der Befehl appendChild ermöglicht es HTML-Objekte in einem HTML-Objekt einzufügen:
 questionSummary.appendChild(icon);
 
-##Einbinden der Flaggen
+## Einbinden der Flaggen
 
 Für die Flaggen kein eine kostenlose API verwendet werden, um die Länderdaten als Array zu laden.
 //Datenrepresentation
@@ -51,4 +51,17 @@ function getData(){
         console.log(countries);
     })
 }
+
+## Alternative, falls der erste Weg nicht geht: 
+In Ihre Website einbinden
+<img 
+  src="https://flagcdn.com/ro.svg" 
+  width="30" 
+  alt="Rumänien">
+  
+Programmatisch herunterladen
+https://flagcdn.com/ro.svg
+
+Liste der Codes mit Namen in JSON (Länder, US-Staaten, EU & UN)
+https://flagcdn.com/de/codes.json
 
