@@ -1,0 +1,49 @@
+
+#flagimage{
+    position: relative;
+    width:80%;
+    height:100px;
+    left: 10%;
+    border: 1px;
+}
+button{
+    display:block;
+    width:99%;
+}
+
+#quiz{ width:400px; }
+#quizcard{ width:100%; }
+
+#summary{background-color:lightsteelblue;}
+#summary-header{
+    background-color: darkblue;
+    color: white;
+    display:flex;
+    flex-direction: row;
+}
+
+
+.correct{
+    background-color: green;
+}
+
+.wrong{
+    background-color: red;
+}   
+#summary-content{
+    display:flex;
+    flex-direction: column;
+}   
+.question-summary{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}     
+
+.flagIcon{
+    flex:1;
+    height:1em;
+}
+.country, .playerAnswer{
+    flex:1;
+}
