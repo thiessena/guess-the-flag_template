@@ -13,25 +13,33 @@ Dann kann am Ende noch eine Zusammenfassung eingeblendet werden.
 
 
 ## Befehle, um aus Javascript auf die HTML-Elemente zuzugreifen
+```javascript
 document.querySelector
+
 Mit dem Query-Selector kann man mit CSS-Anfragen Elemente auswählen: 
 Der folgende Befehl liefert ein Element, das die CSS-Bedingung erfüllt.
+```javascript
 document.querySelector("#quizcard");
-
+```
 Der Datentyp der Rückgabe ist ein HTML-Node und kann deshalb auch mit der Punktschreibweise angesprochen werden: 
+```javascript
 document.querySelector("#infotext").style.display = "none";
-
+```
 Auch Bilder können mit dieser Methode verändert werden:
+```javascript
     const flagImage = document.querySelector("#flagImage");
     flagImage.setAttribute("src", questions[question].flagImage);
-
+```
 Selbst der Inhalt zwischen dem Start- und Endtage kann direkt editiert werden: 
+```javascript
 options[i].innerHTML
-
+```
 HTML-Elemente in Javascript erzeugen: 
 Mit dem Befehl createElement können beliebige HTML-Tags erzeugt werden: 
+```javascript
 const questionSummary = document.createElement("div");
 const icon = document.createElement("img");
+```
 
 Der Befehl appendChild ermöglicht es HTML-Objekte in einem HTML-Objekt einzufügen:
 questionSummary.appendChild(icon);
@@ -39,6 +47,7 @@ questionSummary.appendChild(icon);
 ## Einbinden der Flaggen
 
 Für die Flaggen kein eine kostenlose API verwendet werden, um die Länderdaten als Array zu laden.
+```javascript
 //Datenrepresentation
 let countries = [];
 getData();
@@ -51,21 +60,22 @@ function getData(){
         console.log(countries);
     })
 }
-
+```
 ## Alternative, falls der erste Weg nicht geht: 
 In Ihre Website einbinden
+```html
 <img 
   src="https://flagcdn.com/ro.svg" 
   width="30" 
   alt="Rumänien">
-  
+```  
 Programmatisch herunterladen
 https://flagcdn.com/ro.svg
 
 Liste der Codes mit Namen in JSON (Länder, US-Staaten, EU & UN)
 https://flagcdn.com/de/codes.json
 
-
+```javascript
 function getData(){
     fetch("https://flagcdn.com/de/codes.json")
     .then((response) => response.json())
@@ -74,7 +84,6 @@ function getData(){
         flags = Object.keys(data);
         console.log(flags);
         console.log("json geladen");
-
     })
 }
-
+```
