@@ -65,3 +65,16 @@ https://flagcdn.com/ro.svg
 Liste der Codes mit Namen in JSON (Länder, US-Staaten, EU & UN)
 https://flagcdn.com/de/codes.json
 
+
+function getData(){
+    fetch("https://flagcdn.com/de/codes.json")
+    .then((response) => response.json())
+    .then((data)=>{
+        countries = Object.values(data);
+        flags = Object.keys(data);
+        console.log(flags);
+        console.log("json geladen");
+
+    })
+}
+
