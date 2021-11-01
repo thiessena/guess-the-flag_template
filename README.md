@@ -15,7 +15,7 @@ Dann kann am Ende noch eine Zusammenfassung eingeblendet werden.
 ## Befehle, um aus Javascript auf die HTML-Elemente zuzugreifen
 ```javascript
 document.querySelector
-
+```
 Mit dem Query-Selector kann man mit CSS-Anfragen Elemente auswählen: 
 Der folgende Befehl liefert ein Element, das die CSS-Bedingung erfüllt.
 ```javascript
