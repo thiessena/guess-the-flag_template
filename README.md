@@ -30,6 +30,7 @@ Auch Bilder können mit dieser Methode verändert werden:
     const flagImage = document.querySelector("#flagImage");
     flagImage.setAttribute("src", questions[question].flagImage);
 ```
+
 Selbst der Inhalt zwischen dem Start- und Endtage kann direkt editiert werden: 
 ```javascript
 options[i].innerHTML
